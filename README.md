@@ -1,5 +1,7 @@
 Celery example on Heroku
 
+To follow this, you must have a heroku account. You must also have the heroku CLI installed.
+
 You can run Celery locally (for testing purposes), but it's a little bit complicated because you have to run a number of processes in different windows of your terminal. If you want to see that (or try it) here's a pretty clear example:
 https://www.youtube.com/watch?v=THxCy-6EnQM
 
