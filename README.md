@@ -1,4 +1,4 @@
-Celery example on Heroku
+#Celery example on Heroku
 
 To follow this, you must have a heroku account. You must also have the heroku CLI installed. Follow these instructions to [get set up with Heroku and Python](https://devcenter.heroku.com/articles/getting-started-with-python)
 
