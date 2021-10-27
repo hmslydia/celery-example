@@ -8,6 +8,11 @@ https://www.youtube.com/watch?v=THxCy-6EnQM
 
 After you clone this repo, here are the basic steps you need to do:
 
+0. Log into Heroku
+```
+heroku login
+```
+
 1. Create a new Heroku project for this 
 ```
 heroku create 
