@@ -28,8 +28,8 @@ app = Celery('tasks', broker='amqps://YOUR_STUFF_HERE')
 def hello():
     message = client.messages.create(
          body='This is the ship that made the Kessel Run in fourteen parsecs?',
-         from_='+12028663505',
-         to='+15103769964'
+         from_=from_number,
+         to=to_number
      )
     return 'hello world'
 
