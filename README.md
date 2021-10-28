@@ -22,13 +22,17 @@ heroku create
 ```
 heroku apps:rename celery-example
 ```
+If that gives you errors, try  
+```
+heroku apps:rename celery-example --app old-app-name
+```
 
 3. Add your secrets and keys to tasks.py
 * twilio account info
 * twilio phone number
 * your phone number (number for the app to text for testing purposes) 
 
-3. Add cloudAMPQ to your celery-example Heroku project from the dashboard. Get its URL and paste that in the broker placeholder
+3. Add cloudAMPQ to your celery-example Heroku project from the dashboard. Get its URL and paste that in the broker placeholder. You may have to put in a credit card number to verify that you're a real person (not a bot), but it is free at this tier. You won't be charged (unless you scale up... they will warn you if you accidentally do that.)
 
 4. git commit it
 ```
@@ -36,9 +40,16 @@ git commit -am "commit your changes"
 ```
 
 5. Push it to Heroku
+Connect your git directory to the Heroku project
 ```
-git push heroku master
+heroku git:remote -a my_app_name
 ```
+
+```
+git push heroku main
+```
+
+(or whatever the name of your git branch is. It might be master instead of main)
 
 6. (You probably don't need to do this) If you edited the code and included any more packages, add that to the requirements.txt file with this command.
 ```
